@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShowWindow</class>
+ <widget class="QMainWindow" name="ShowWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>529</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ShowWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidgetChooseFunction">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>351</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="a_page">
+     <widget class="QWidget" name="a_widgetLayout" native="true">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>168</width>
+        <height>114</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="a_labelId">
+         <property name="text">
+          <string>学号：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="a_lineEditId"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="a_lableName">
+         <property name="text">
+          <string>姓名：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="a_labelGrade">
+         <property name="text">
+          <string>成绩：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="a_lineEditGrade"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="a_lineEditName"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="a_pushButtonYes">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>170</y>
+        <width>80</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="a_pushButtonNo">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>170</y>
+        <width>80</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="d_page">
+     <widget class="QWidget" name="d_widgetLayout" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>211</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="d_labelChoose">
+         <property name="text">
+          <string>D:请选择你索引的方式：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="d_radioButtonId">
+         <property name="text">
+          <string>学号</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="d_radioButtonName">
+         <property name="text">
+          <string>姓名</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="d_stackedWidgetChoose">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>130</y>
+        <width>221</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="d_pageId">
+       <widget class="QLabel" name="d_labelId">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>121</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>请输入学号：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="d_lineEditId">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>48</y>
+          <width>191</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="d_pushButtonNoId">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>79</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="d_pushButtonYesId">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>79</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="d_pageName">
+       <widget class="QLabel" name="d_labelName">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>请输入姓名：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="d_lineEditName">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>48</y>
+          <width>191</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="d_pushButtonNoName">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>79</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="d_pushButtonYesName">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>79</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="c_page">
+     <widget class="QStackedWidget" name="c_stackedWidgetJump">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>301</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="c_pageFind">
+       <widget class="QWidget" name="c_widgetLayout" native="true">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>-10</y>
+          <width>211</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="c_labelChoose">
+           <property name="text">
+            <string>C:请选择你索引的方式：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="c_radioButtonId">
+           <property name="text">
+            <string>学号</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="c_radioButtonName">
+           <property name="text">
+            <string>姓名</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QStackedWidget" name="c_stackedWidgetChoose">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>110</y>
+          <width>211</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="c_pageId">
+         <widget class="QLabel" name="c_labelId">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>9</y>
+            <width>121</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>请输入学号：</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="c_lineEditId">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>48</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="c_pushButtonNoId">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>79</y>
+            <width>80</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>取消</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="c_pushButtonYesId">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>79</y>
+            <width>80</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>确定</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="c_pageName">
+         <widget class="QLabel" name="c_labelName">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>9</y>
+            <width>111</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>请输入姓名：</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="c_lineEditName">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>48</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="c_pushButtonNoName">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>79</y>
+            <width>80</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>取消</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="c_pushButtonYesName">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>79</y>
+            <width>80</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>确定</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="c_pageChange">
+       <widget class="QWidget" name="ca_widgetLayout" native="true">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>50</y>
+          <width>168</width>
+          <height>114</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="ca_lineEditId"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="ca_lineEditName"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="ca_labelGrade">
+           <property name="text">
+            <string>成绩：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="ca_labelId">
+           <property name="text">
+            <string>学号：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="ca_lableName">
+           <property name="text">
+            <string>姓名：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="ca_lineEditGrade"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="ca_pushButtonYes">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>170</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ca_pushButtonNo">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>170</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ca_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>181</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>请重新输入信息：</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="f_page">
+     <widget class="QTableWidget" name="f_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>311</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>学号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>姓名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>成绩</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="cal_page">
+     <widget class="QLabel" name="cal_label">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>学生成绩分析：</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="cal_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>221</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>平均分</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>最大分</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>最小分</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>成绩</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="a_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="d_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cle_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>一键清空</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="c_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>修改</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="f_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cal_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>成绩分析</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelTitle">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(149, 149, 149);
+color: rgb(97, 97, 97);</string>
+    </property>
+    <property name="text">
+     <string>学生管理系统</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>529</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
